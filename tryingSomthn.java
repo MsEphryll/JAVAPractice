@@ -12,7 +12,7 @@ public class tryingSomthn {
     System.out.println(Integer.parseInt(a) + b); // >> 2000400
 
     int j = 12;
-    double k = 15.0;
+    // int k = 15.0; ?
 
     // System.out.println(int(k) + j);
 
