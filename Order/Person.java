@@ -16,6 +16,6 @@ public class Person {
   }
 
   public String toString() {
-    return getFullName() + " age is " + age;
+    return getFullName() + " \tAge: " + (int) age;
   }
 }
