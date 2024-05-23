@@ -42,6 +42,17 @@ public class Order implements Taxables {
 
   @Override
   public String toString() {
-    return "Customer: " + customer + "\t\nNumber of items: " + count + "\tTotal Price: " + getOrderPrice();
+    // return "Customer Name: " + customer.getFullName() + "\t\nOrdered Items: " +
+    // "\tTotal Price: "
+    // + getOrderPrice();
+
+    String details = "Customer Name: " + customer.getFullName() + "\nOrdered Item:\n";
+    for (int i = 0; i < count; i++) {
+      details += product[i].getName() + " -Quantity: " + qty[i] + "\n";
+    }
+
+    details += "Total Price: " + getOrderPrice();
+    return details;
+
   }
 }

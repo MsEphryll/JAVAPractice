@@ -5,15 +5,21 @@ public class Products implements Taxables {
   protected double price;
   protected double taxRate = 0.25;
 
-  public Products(String name, String code, double price) {
+  public Products(String name, double price) {
     this.name = name;
-    this.code = code;
     this.price = price;
   }
 
-  public Products(String name, String code, double price, double taxRate) {
+  // public String getName {
+  // return pname;
+  // }
+
+  // public void setName(pname){
+  // this.name = pname;
+  // }
+
+  public Products(String name, double price, double taxRate) {
     this.name = name;
-    this.code = code;
     this.price = price;
     this.taxRate = taxRate;
   }
@@ -34,6 +40,14 @@ public class Products implements Taxables {
 
   @Override
   public String toString() {
-    return "Name: " + this.name + "\tOrder price: " + computeFinalPrice() + "\tTax: " + this.taxRate;
+    return "Product Name: " + this.name + "\tBase price: " + this.price + "\tTax: " + this.taxRate;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
   }
 }

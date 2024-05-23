@@ -5,22 +5,15 @@ public class Main {
     Person person = new Person("April", "Bitang", 20);
     // System.out.println(person);
 
-    Products products = new Products("Green Piattos", "20123", 38, 7);
-    // System.out.println(products);
+    Products piattos = new Products("Green Piattos", 38, 7);
+    Products laptop = new Products("Dell", 64000);
+    System.out.println(laptop);
+    System.out.println(piattos);
 
     Order order = new Order(person);
-    order.addNewOrder(products, 3);
-    order.addNewOrder(products, 3);
-    order.addNewOrder(products, 3);
-    order.addNewOrder(products, 3);
-    order.addNewOrder(products, 4);
-    order.addNewOrder(products, 3);
-    order.addNewOrder(products, 3);
-    order.addNewOrder(products, 3);
-    order.addNewOrder(products, 3);
-    order.addNewOrder(products, 3);
-    order.addNewOrder(products, 4);
-    order.addNewOrder(products, 3);
+    order.addNewOrder(piattos, 3);
+    order.addNewOrder(laptop, 2);
+
     System.out.println(order);
   }
 }
